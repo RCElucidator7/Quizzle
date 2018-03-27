@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="QuizGame.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:QuizGame"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid Background="DarkSlateGray">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Margin="0 20 0 0">
+                <TextBlock x:Name="Title" Text="Quizzle" Foreground="LightSeaGreen" FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="38" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            </Grid>
+            <Grid Grid.Row="1">
+                <TextBlock x:Name="txtBestScore" Text="Best Score : 0" Foreground="Wheat" FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="27" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center"></TextBlock>
+            </Grid>
+            <Grid Grid.Row="2">
+                <StackPanel Orientation="Vertical">
+                    <Button x:Name="btnStart" BorderBrush="Red" BorderThickness="5" Background="Green" Content="PLAY!" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="40 10 40 10" Foreground="White" FontWeight="ExtraBold" FontSize="25" Click="btnStart_Click"/>
+                    <Button x:Name="btnOptions" BorderBrush="Green" BorderThickness="5" Background="Red" Content="Options" Margin="0 20 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="20 10 20 10" Foreground="White" FontWeight="ExtraBold" FontSize="25" Click="btnOptions_Click"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
