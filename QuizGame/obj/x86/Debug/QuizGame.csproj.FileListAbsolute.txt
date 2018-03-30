@@ -215,3 +215,8 @@ D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\obj\x86\Debug\qualifiers.txt
 D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\obj\x86\Debug\qualifiers.txt.intermediate
 D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\obj\x86\Debug\ProjectArchitectures.txt
+D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\bin\x86\Debug\Pages\GameOver.xbf
+D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\obj\x86\Debug\Pages\GameOver.g.i.cs
+D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\obj\x86\Debug\Pages\GameOver.g.cs
+D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\obj\x86\Debug\Pages\GameOver.xaml
+D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\obj\x86\Debug\Pages\GameOver.xbf

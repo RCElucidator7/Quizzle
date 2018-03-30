@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="QuizGame.Pages.GameOver"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:QuizGame.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid Background="DarkSlateGray">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                    <TextBlock x:Name="txtTitle" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Game Over" Foreground="DarkRed"  FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="30" TextAlignment="Center"/>
+                    <TextBlock x:Name="Score" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Score" Foreground="White"  FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="30" TextAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1">
+                <TextBlock x:Name="txtUserScore" VerticalAlignment="Center" HorizontalAlignment="Center" Text="0" Foreground="White" FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="20" TextAlignment="Center"/>
+            </Grid>
+            <Grid Grid.Row="2">
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                    <Button x:Name="btnRetry" BorderBrush="DarkRed" BorderThickness="3" Background="Green" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 20 0 0" Foreground="Black" FontWeight="ExtraBold" Click="btnRetry_Click">Retry</Button>
+                    <Button x:Name="btnQuit" BorderBrush="DarkRed" BorderThickness="3" Background="Green" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 20 0 0" Foreground="Black" FontWeight="ExtraBold" Click="btnQuit_Click">Quit</Button>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

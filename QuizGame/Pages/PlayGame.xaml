@@ -24,8 +24,8 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <TextBlock x:Name="txtState" Text="1" FontSize="45" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <ProgressBar x:Name="timeBar" IsIndeterminate="False" Maximum="999" Minimum="0" Height="10" Margin="8 0 8 0" Value="999" SmallChange="1"/>
+                <TextBlock x:Name="txtState" Text="1" FontSize="45" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <ProgressBar x:Name="timeBar" IsIndeterminate="False" Maximum="9999" Minimum="0" Height="10" Grid.Row="1" Margin="8 0 8 0" Value="999" SmallChange="1"/>
             </Grid>
             <Grid Grid.Row="2">
                 <TextBlock x:Name="txtQuest" Text="Blue" FontSize="50" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
