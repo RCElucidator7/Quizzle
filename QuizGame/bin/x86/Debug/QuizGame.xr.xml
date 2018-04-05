@@ -36,8 +36,6 @@
       <RootProperty Name="Content" />
       <RootProperty Name="Padding" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
@@ -52,6 +50,13 @@
     </RootType>
     <RootType FullName="QuizGame.Pages.GameOver" />
     <RootType FullName="QuizGame.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Slider">
+      <RootProperty Name="Minimum" />
+      <RootProperty Name="Maximum" />
+      <RootProperty Name="Value" />
+      <RootEvent Name="ValueChanged" />
+    </RootType>
+    <RootType FullName="QuizGame.Pages.Options" />
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
       <RootProperty Name="IsIndeterminate" />
       <RootProperty Name="Maximum" />

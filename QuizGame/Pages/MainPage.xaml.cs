@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuizGame.Pages;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -59,12 +60,12 @@ namespace QuizGame
 
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PlayGame));
+            Frame.Navigate(typeof(PlayGame));
         }
 
         private void btnOptions_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(Options));
         }
     }
 }

@@ -22,7 +22,5 @@ namespace QuizGame.Settings
 
             return setting.Values.ContainsKey(key) ? setting.Values[key] as string : String.Empty;
         }
-
-
     }
 }

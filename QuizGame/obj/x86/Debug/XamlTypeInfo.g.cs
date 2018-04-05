@@ -132,19 +132,21 @@ namespace QuizGame.QuizGame_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
+            _typeNameTable = new string[6];
             _typeNameTable[0] = "QuizGame.Pages.GameOver";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "QuizGame.MainPage";
-            _typeNameTable[4] = "QuizGame.PlayGame";
+            _typeNameTable[4] = "QuizGame.Pages.Options";
+            _typeNameTable[5] = "QuizGame.PlayGame";
 
-            _typeTable = new global::System.Type[5];
+            _typeTable = new global::System.Type[6];
             _typeTable[0] = typeof(global::QuizGame.Pages.GameOver);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::QuizGame.MainPage);
-            _typeTable[4] = typeof(global::QuizGame.PlayGame);
+            _typeTable[4] = typeof(global::QuizGame.Pages.Options);
+            _typeTable[5] = typeof(global::QuizGame.PlayGame);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -181,7 +183,8 @@ namespace QuizGame.QuizGame_XamlTypeInfo
 
         private object Activate_0_GameOver() { return new global::QuizGame.Pages.GameOver(); }
         private object Activate_3_MainPage() { return new global::QuizGame.MainPage(); }
-        private object Activate_4_PlayGame() { return new global::QuizGame.PlayGame(); }
+        private object Activate_4_Options() { return new global::QuizGame.Pages.Options(); }
+        private object Activate_5_PlayGame() { return new global::QuizGame.PlayGame(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -215,9 +218,16 @@ namespace QuizGame.QuizGame_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 4:   //  QuizGame.PlayGame
+            case 4:   //  QuizGame.Pages.Options
                 userType = new global::QuizGame.QuizGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_PlayGame;
+                userType.Activator = Activate_4_Options;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  QuizGame.PlayGame
+                userType = new global::QuizGame.QuizGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_PlayGame;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

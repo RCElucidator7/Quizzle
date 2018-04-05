@@ -18,12 +18,13 @@
                 <TextBlock Text="Speed" Foreground="White" FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
             </Grid>
             <Grid Grid.Row="1">
-                <Slider x:Name="adjustSpeed" Minimum="0" Maximum="10" Value="5" ValueChanged="Slider_ValueChanged"></Slider>
+                <Slider x:ConnectionId='2' x:Name="adjustSpeed" Minimum="0" Maximum="10" Value="5"                                   ></Slider>
             </Grid>
             <Grid Grid.Row="2">
-                <Button x:Name="btnBack" Content="Back" Padding="50 0" Margin="50" Foreground="White" FontWeight="ExtraBold" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="Green" BorderBrush="Red" Click="btnBack_Click"></Button>
+                <Button x:ConnectionId='1' x:Name="btnBack" Content="Back" Padding="50 0" Margin="50" Foreground="White" FontWeight="ExtraBold" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="Green" BorderBrush="Red"                      ></Button>
             </Grid>
         </Grid>
 
     </Grid>
 </Page>
+

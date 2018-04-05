@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-05T17:31:36.551</Modified>
+      <Modified>2018-04-05T18:56:42.740</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\bin\x86\Debug\QuizGame.exe">
       <PackagePath>entrypoint\QuizGame.exe</PackagePath>
-      <Modified>2018-04-05T17:31:35.123</Modified>
+      <Modified>2018-04-05T18:56:42.453</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ryan Conway\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -532,7 +532,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\bin\x86\Debug\QuizGame.xr.xml">
       <PackagePath>QuizGame.xr.xml</PackagePath>
-      <Modified>2018-04-05T17:31:34.683</Modified>
+      <Modified>2018-04-05T18:43:58.526</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -541,11 +541,11 @@
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-05T17:31:36.209</Modified>
+      <Modified>2018-04-05T18:55:30.937</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\bin\x86\Debug\Core\QuizGame.exe">
       <PackagePath>QuizGame.exe</PackagePath>
-      <Modified>2018-04-05T17:31:36.543</Modified>
+      <Modified>2018-04-05T18:56:42.737</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

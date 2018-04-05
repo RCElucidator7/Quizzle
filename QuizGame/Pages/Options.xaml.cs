@@ -27,6 +27,11 @@ namespace QuizGame.Pages
             this.InitializeComponent();
         }
 
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested -= Options_BackRequested;
+        }
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested += Options_BackRequested;
@@ -46,7 +51,15 @@ namespace QuizGame.Pages
 
         private void Slider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
+            Settings.Settings.speed = int.Parse(adjustSpeed.Value.ToString())*10;
+            Settings.Settings.saveSetting("speed", Settings.Settings.speed.ToString());
+        }
 
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            int sliderValue = Settings.Settings.speed;
+            adjustSpeed.Value = sliderValue / 10;
+            Frame.Navigate(typeof(MainPage));
         }
     }
 }
