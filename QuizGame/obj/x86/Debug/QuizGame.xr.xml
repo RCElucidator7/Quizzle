@@ -36,6 +36,8 @@
       <RootProperty Name="Content" />
       <RootProperty Name="Padding" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">

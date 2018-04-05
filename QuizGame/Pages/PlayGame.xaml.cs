@@ -58,7 +58,7 @@ namespace QuizGame
 
         private int randNum()
         {
-            return rand.Next(1, 4);
+            return rand.Next(1, 5);
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
