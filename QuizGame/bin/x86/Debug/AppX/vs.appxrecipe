@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-05T18:56:42.740</Modified>
+      <Modified>2018-04-08T14:54:28.983</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\bin\x86\Debug\QuizGame.exe">
       <PackagePath>entrypoint\QuizGame.exe</PackagePath>
-      <Modified>2018-04-05T18:56:42.453</Modified>
+      <Modified>2018-04-08T14:54:28.664</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ryan Conway\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -541,11 +541,11 @@
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-05T18:55:30.937</Modified>
+      <Modified>2018-04-08T14:50:40.714</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\bin\x86\Debug\Core\QuizGame.exe">
       <PackagePath>QuizGame.exe</PackagePath>
-      <Modified>2018-04-05T18:56:42.737</Modified>
+      <Modified>2018-04-08T14:54:28.980</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

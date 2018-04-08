@@ -46,7 +46,7 @@ namespace QuizGame.Pages
                 Settings.Settings.saveSetting("highScore", highScore);
             }
 
-            Score.Text = highScore;
+            txtUserScore.Text = highScore;
         }
 
         private async void GameOver_BackRequested(object sender, Windows.UI.Core.BackRequestedEventArgs e)

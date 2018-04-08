@@ -27,6 +27,7 @@ namespace QuizGame
         private Random rand = new Random();
 
         private int score = 0;
+        int i = 0;
         private int highScore = 0;
         private int state = 1;
         private string colourResult;
@@ -35,13 +36,13 @@ namespace QuizGame
 
         void setUpTimeBar()
         {
+            timeBar.Value = 9999;
             //Timer set up for the timer bar in app
             dispatcherTimer = new DispatcherTimer();
             dispatcherTimer.Tick += DispatcherTimer_Tick;
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 0, 0, 1);
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
             dispatcherTimer.Start();
 
-            timeBar.Value = 9999;
         }
 
         private void DispatcherTimer_Tick(object sender, object e)
@@ -97,6 +98,29 @@ namespace QuizGame
             }
 
             txtQuest.Text = String.Format("{0}", colourResult);
+
+            i += 1;
+
+            if (i >= 20)
+            {
+                int foreColour = randNum();
+                if(foreColour == 1)
+                {
+                    txtQuest.Foreground = new SolidColorBrush(Windows.UI.Colors.Blue);
+                }
+                else if (foreColour == 2)
+                {
+                    txtQuest.Foreground = new SolidColorBrush(Windows.UI.Colors.Red);
+                }
+                else if (foreColour == 3)
+                {
+                    txtQuest.Foreground = new SolidColorBrush(Windows.UI.Colors.Green);
+                }
+                else if (foreColour == 4)
+                {
+                    txtQuest.Foreground = new SolidColorBrush(Windows.UI.Colors.DarkOrange);
+                }
+            }
 
             setUpTimeBar();
 

@@ -16,15 +16,17 @@
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
                 <StackPanel Orientation="Vertical" VerticalAlignment="Center">
-                    <TextBlock x:Name="txtTitle" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Game Over" Foreground="DarkRed"  FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="30" TextAlignment="Center"/>
-                    <TextBlock x:Name="Score" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Score" Foreground="White"  FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="30" TextAlignment="Center"/>
+                    <TextBlock x:Name="txtTitle" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Game Over" Foreground="DarkRed"  FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="50" TextAlignment="Center"/>
+                    <TextBlock x:Name="Score" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Score" Foreground="White"  FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="40" TextAlignment="Center"/>
                 </StackPanel>
             </Grid>
             <Grid Grid.Row="1">
-                <TextBlock x:Name="txtUserScore" VerticalAlignment="Center" HorizontalAlignment="Center" Text="0" Foreground="White" FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="20" TextAlignment="Center"/>
+                <TextBlock x:Name="txtUserScore" VerticalAlignment="Center" HorizontalAlignment="Center" Text="0" Foreground="White" FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="25" TextAlignment="Center"/>
             </Grid>
             <Grid Grid.Row="2">
                 <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                    <TextBlock x:Name="Message" FontWeight="SemiBold" Foreground="White" HorizontalAlignment="Center">Thank you for playing!</TextBlock>
+                    <TextBlock x:Name="Message2" FontWeight="SemiBold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top">Try again or quit out to the main menu!</TextBlock>
                     <Button x:Name="btnRetry" BorderBrush="DarkRed" BorderThickness="3" Background="Green" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 20 0 0" Foreground="Black" FontWeight="ExtraBold" Click="btnRetry_Click">Retry</Button>
                     <Button x:Name="btnQuit" BorderBrush="DarkRed" BorderThickness="3" Background="Green" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 20 0 0" Foreground="Black" FontWeight="ExtraBold" Click="btnQuit_Click">Quit</Button>
                 </StackPanel>
