@@ -41,15 +41,15 @@ namespace QuizGame
             timeBar.Value = 9999;
             //Timer set up for the timer bar in app
             dispatcherTimer = new DispatcherTimer();
-            dispatcherTimer.Tick += DispatcherTimer_Tick;
             dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
+            dispatcherTimer.Tick += DispatcherTimer_Tick;
             dispatcherTimer.Start();
 
         }
 
         private void DispatcherTimer_Tick(object sender, object e)
         {
-            timeBar.Value = Settings.Settings.speed;
+            timeBar.Value -= Settings.Settings.speed;
             if(timeBar.Value <= 0)
             {
                 dispatcherTimer.Stop();
@@ -131,6 +131,8 @@ namespace QuizGame
         private async void PlayGame_BackRequested(object sender, Windows.UI.Core.BackRequestedEventArgs e)
         {
             e.Handled = true;
+            dispatcherTimer.Stop();
+            dispatcherTimer = null;
             var backMessage = new MessageDialog("Are you sure you want to close the App?");
             var okBtn = new UICommand("Yes");
             var cancelBtn = new UICommand("Cancel");

@@ -74,7 +74,6 @@
       <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
-      <RootProperty Name="IsIndeterminate" />
       <RootProperty Name="Maximum" />
       <RootProperty Name="Minimum" />
       <RootProperty Name="Height" />

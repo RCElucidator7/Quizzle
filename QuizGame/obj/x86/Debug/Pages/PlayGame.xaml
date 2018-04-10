@@ -30,7 +30,7 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <TextBlock x:ConnectionId='6' x:Name="txtState" Text="1" FontSize="45" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <ProgressBar x:ConnectionId='7' x:Name="timeBar" IsIndeterminate="False" Maximum="9999" Minimum="0" Height="10" Grid.Row="1" Margin="8 0 8 0" Value="9999" SmallChange="1"/>
+                <ProgressBar x:ConnectionId='7' x:Name="timeBar" Maximum="100" Minimum="0" Height="10" Grid.Row="1" Margin="8 0 8 0" Value="50" SmallChange="1"/>
             </Grid>
             <Grid Grid.Row="2" Grid.ColumnSpan="2">
                 <TextBlock x:ConnectionId='5' x:Name="txtQuest" Text="Blue" FontSize="50" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
