@@ -10,17 +10,22 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid Background="DarkSlateGray">
             <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Grid Grid.Row="0" Margin="5">
+            <Grid Grid.Row="0">
+                <TextBlock Text="How to play:" FontSize="50" Foreground="White"></TextBlock>
+                <TextBlock Text="A colour will appear on the screen, you must press the corrisponding coloured button on the bottom of the screen. Dont be fooled though, make sure you choose the colour that is said..." FontSize="23" VerticalAlignment="Bottom" Foreground="White" TextWrapping="Wrap"></TextBlock>
+            </Grid>
+            <Grid Grid.Row="1" Margin="5">
                 <TextBlock Text="Speed" Foreground="White" FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
             </Grid>
-            <Grid Grid.Row="1">
-                <Slider x:Name="adjustSpeed" Minimum="0" Maximum="10" Value="5" ValueChanged="Slider_ValueChanged"></Slider>
-            </Grid>
             <Grid Grid.Row="2">
+                <Slider x:Name="adjustSpeed" Minimum="0" Maximum="10" ValueChanged="Slider_ValueChanged"></Slider>
+            </Grid>
+            <Grid Grid.Row="3">
                 <Button x:Name="btnBack" Content="Back" Padding="50 0" Margin="50" Foreground="White" FontWeight="ExtraBold" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="Green" BorderBrush="Red" Click="btnBack_Click"></Button>
             </Grid>
         </Grid>

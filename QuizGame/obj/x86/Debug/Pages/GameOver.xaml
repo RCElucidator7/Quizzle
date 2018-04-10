@@ -16,20 +16,23 @@
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
                 <StackPanel Orientation="Vertical" VerticalAlignment="Center">
-                    <TextBlock x:ConnectionId='4' x:Name="txtTitle" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Game Over" Foreground="DarkRed"  FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="30" TextAlignment="Center"/>
-                    <TextBlock x:ConnectionId='5' x:Name="Score" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Score" Foreground="White"  FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="30" TextAlignment="Center"/>
+                    <Image x:ConnectionId='6' x:Name="gameoverImg" Margin="30" Height="150" Source="ms-appx:///Assets/gameover.PNG"/>
+                    <TextBlock x:ConnectionId='7' x:Name="Score" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Score" Foreground="White"  FontWeight="SemiBold" TextWrapping="Wrap" FontSize="40" TextAlignment="Center"/>
                 </StackPanel>
             </Grid>
             <Grid Grid.Row="1">
-                <TextBlock x:ConnectionId='3' x:Name="txtUserScore" VerticalAlignment="Center" HorizontalAlignment="Center" Text="0" Foreground="White" FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="20" TextAlignment="Center"/>
+                <TextBlock x:ConnectionId='5' x:Name="txtUserScore" VerticalAlignment="Center" HorizontalAlignment="Center" Text="0" Foreground="White" FontWeight="SemiBold" TextWrapping="Wrap" FontSize="25" TextAlignment="Center"/>
             </Grid>
             <Grid Grid.Row="2">
                 <StackPanel Orientation="Vertical" VerticalAlignment="Center">
-                    <Button x:ConnectionId='1' x:Name="btnRetry" BorderBrush="DarkRed" BorderThickness="3" Background="Green" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 20 0 0" Foreground="Black" FontWeight="ExtraBold"                       >Retry</Button>
-                    <Button x:ConnectionId='2' x:Name="btnQuit" BorderBrush="DarkRed" BorderThickness="3" Background="Green" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 20 0 0" Foreground="Black" FontWeight="ExtraBold"                      >Quit</Button>
+                    <TextBlock x:ConnectionId='1' x:Name="Message" FontWeight="SemiBold" Foreground="White" HorizontalAlignment="Center">Thank you for playing!</TextBlock>
+                    <TextBlock x:ConnectionId='2' x:Name="Message2" FontWeight="SemiBold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top">Try again or quit out to the main menu!</TextBlock>
+                    <Button x:ConnectionId='3' x:Name="btnRetry" BorderBrush="DarkRed" BorderThickness="3" Background="Green" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 20 0 0" Foreground="Black" FontWeight="ExtraBold"                       >Retry</Button>
+                    <Button x:ConnectionId='4' x:Name="btnQuit" BorderBrush="DarkRed" BorderThickness="3" Background="Green" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 20 0 0" Foreground="Black" FontWeight="ExtraBold"                      >Main Menu</Button>
                 </StackPanel>
             </Grid>
         </Grid>
+        <Image HorizontalAlignment="Left" Height="100" Margin="3400,-358,-3140,0" VerticalAlignment="Top" Width="100"/>
     </Grid>
 </Page>
 

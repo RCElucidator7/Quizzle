@@ -14,6 +14,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Media.Playback;
+using Windows.Media.Core;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -57,7 +59,7 @@ namespace QuizGame
             }
         }
 
-        private int randNum()
+        private int randNumGenerator()
         {
             return rand.Next(1, 5);
         }
@@ -74,12 +76,12 @@ namespace QuizGame
             highScore = int.Parse(Settings.Settings.loadSettings("highScore"));
             txtHighScore.Text = String.Format("High Score: {0}", highScore);
             dispatcherTimer = null;
-            Playing();
+            StartGame();
         }
 
-        private void Playing()
+        private void StartGame()
         {
-            int colour = randNum();
+            int colour = randNumGenerator();
             if(colour == 1)
             {
                 colourResult = "Blue";
@@ -103,7 +105,7 @@ namespace QuizGame
 
             if (i >= 20)
             {
-                int foreColour = randNum();
+                int foreColour = randNumGenerator();
                 if(foreColour == 1)
                 {
                     txtQuest.Foreground = new SolidColorBrush(Windows.UI.Colors.Blue);
@@ -151,13 +153,22 @@ namespace QuizGame
 
         private void btnBlue_Click(object sender, RoutedEventArgs e)
         {
-            if("Blue" == colourResult)
+            if ("Blue" == colourResult)
             {
+                //MediaPlayer ding;
+                //ding = new MediaPlayer();
+
+                //Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Settings");
+                //Windows.Storage.StorageFile file = await folder.GetFileAsync("ding.mp3");
+
+                //ding.AutoPlay = false;
+                //ding.Source = MediaSource.CreateFromStorageFile(file);
+
                 txtScore.Text = String.Format("Score: {0}".ToUpper(), ++score);
                 txtState.Text = String.Format("{0}", ++state);
                 dispatcherTimer.Stop();
                 dispatcherTimer = null;
-                Playing();
+                StartGame();
             }
             else
             {
@@ -175,7 +186,7 @@ namespace QuizGame
                 txtState.Text = String.Format("{0}", ++state);
                 dispatcherTimer.Stop();
                 dispatcherTimer = null;
-                Playing();
+                StartGame();
             }
             else
             {
@@ -193,7 +204,7 @@ namespace QuizGame
                 txtState.Text = String.Format("{0}", ++state);
                 dispatcherTimer.Stop();
                 dispatcherTimer = null;
-                Playing();
+                StartGame();
             }
             else
             {
@@ -211,7 +222,7 @@ namespace QuizGame
                 txtState.Text = String.Format("{0}", ++state);
                 dispatcherTimer.Stop();
                 dispatcherTimer = null;
-                Playing();
+                StartGame();
             }
             else
             {

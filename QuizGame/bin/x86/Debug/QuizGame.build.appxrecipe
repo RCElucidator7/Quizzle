@@ -367,8 +367,11 @@
     <AppxPackagedFile Include="C:\Users\Ryan Conway\.nuget\packages\System.Xml.XmlSerializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\gameover.PNG">
+      <PackagePath>Assets\gameover.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -396,6 +399,12 @@
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Settings\ding.mp3">
+      <PackagePath>Settings\ding.mp3</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\bin\x86\Debug\QuizGame.xr.xml">
       <PackagePath>QuizGame.xr.xml</PackagePath>

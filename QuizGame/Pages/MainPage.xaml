@@ -15,10 +15,10 @@
                 <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0" Margin="0 20 0 0">
-                <TextBlock x:Name="Title" Text="Quizzle" Foreground="LightSeaGreen" FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="38" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                <Image x:Name="Title"  Margin="30" Source="ms-appx:///Assets/Logo.png"></Image>
             </Grid>
             <Grid Grid.Row="1">
-                <TextBlock x:Name="txtBestScore" Text="Best Score : 0" Foreground="Wheat" FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="27" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center"></TextBlock>
+                <TextBlock x:Name="txtBestScore" Text="Best Score : 0" Foreground="Wheat" FontWeight="Bold" TextWrapping="Wrap" FontSize="27" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center"></TextBlock>
             </Grid>
             <Grid Grid.Row="2">
                 <StackPanel Orientation="Vertical">
