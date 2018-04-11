@@ -47,10 +47,13 @@ namespace QuizGame
 
         }
 
+        //Function to determine the speed of the timer
         private void DispatcherTimer_Tick(object sender, object e)
         {
+            //Decrements by the speed every few seconds
             timeBar.Value -= Settings.Settings.speed;
-            if(timeBar.Value <= 0)
+            //When the time goes to zero the timer stops and the user is navigated to the game over page
+            if (timeBar.Value <= 0)
             {
                 dispatcherTimer.Stop();
                 dispatcherTimer = null;
@@ -59,6 +62,7 @@ namespace QuizGame
             }
         }
 
+        //Random number generator to determine the colours
         private int randNumGenerator()
         {
             return rand.Next(1, 5);
@@ -73,63 +77,79 @@ namespace QuizGame
         {
             Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested += PlayGame_BackRequested;
 
+            //Loads the highest score from the local settings
             highScore = int.Parse(Settings.Settings.loadSettings("highScore"));
             txtHighScore.Text = String.Format("High Score: {0}", highScore);
             dispatcherTimer = null;
+            //Starts game as soon as the user is navigated to the page
             StartGame();
         }
 
         private void StartGame()
         {
+            //Generates a random number between 1 and 4 to determine what colour displays
             int colour = randNumGenerator();
             if(colour == 1)
             {
+                //Word Blue displayed
                 colourResult = "Blue";
             }
             else if (colour == 2)
             {
+                //Word Red displayed
                 colourResult = "Red";
             }
             else if (colour == 3)
             {
+                //Word Green displayed
                 colourResult = "Green";
             }
             else if (colour == 4)
             {
+                //Word Orange displayed
                 colourResult = "Orange";
             }
 
             txtQuest.Text = String.Format("{0}", colourResult);
 
+            //Counter to control the change in colour of the text
             i += 1;
 
-            if (i >= 20)
+            //If statement to check when its over 15
+            if (i >= 15)
             {
+                //Generate random number between 1 and 4 to determine the colour
                 int foreColour = randNumGenerator();
                 if(foreColour == 1)
                 {
+                    //Changes text blue 
                     txtQuest.Foreground = new SolidColorBrush(Windows.UI.Colors.Blue);
                 }
                 else if (foreColour == 2)
                 {
+                    //Changes Text red
                     txtQuest.Foreground = new SolidColorBrush(Windows.UI.Colors.Red);
                 }
                 else if (foreColour == 3)
                 {
+                    //Changes Text green   
                     txtQuest.Foreground = new SolidColorBrush(Windows.UI.Colors.Green);
                 }
                 else if (foreColour == 4)
                 {
+                    //Changes Text Orange
                     txtQuest.Foreground = new SolidColorBrush(Windows.UI.Colors.DarkOrange);
                 }
             }
 
+            //Resets the timer bar
             setUpTimeBar();
-
         }
 
+        //Function to check if the player backs out of the game
         private async void PlayGame_BackRequested(object sender, Windows.UI.Core.BackRequestedEventArgs e)
         {
+            //Stops timer, prompts the user if they want to close the app
             e.Handled = true;
             dispatcherTimer.Stop();
             dispatcherTimer = null;
@@ -141,6 +161,7 @@ namespace QuizGame
 
             IUICommand result = await backMessage.ShowAsync();
 
+            //If user wants to quit the app go to the game over screen
             if (result != null && result.Label.Equals("Yes"))
             {
                 //Navigates to the game over page and passes through score
@@ -153,8 +174,10 @@ namespace QuizGame
             this.InitializeComponent();
         }
 
+        //Checks if the user presses the blue button
         private void btnBlue_Click(object sender, RoutedEventArgs e)
         {
+            //if the colour selected is the same as the colour displayed increment score and reset game
             if ("Blue" == colourResult)
             {
                 //MediaPlayer ding;
@@ -166,12 +189,14 @@ namespace QuizGame
                 //ding.AutoPlay = false;
                 //ding.Source = MediaSource.CreateFromStorageFile(file);
 
+                //increment the score by one if correct
                 txtScore.Text = String.Format("Score: {0}".ToUpper(), ++score);
                 txtState.Text = String.Format("{0}", ++state);
                 dispatcherTimer.Stop();
                 dispatcherTimer = null;
                 StartGame();
             }
+            //Else game over
             else
             {
                 dispatcherTimer.Stop();
@@ -182,14 +207,17 @@ namespace QuizGame
 
         private void btnRed_Click(object sender, RoutedEventArgs e)
         {
+            //if the colour selected is the same as the colour displayed increment score and reset game
             if ("Red" == colourResult)
             {
+                //increment the score by one if correct
                 txtScore.Text = String.Format("Score: {0}".ToUpper(), ++score);
                 txtState.Text = String.Format("{0}", ++state);
                 dispatcherTimer.Stop();
                 dispatcherTimer = null;
                 StartGame();
             }
+            //Else game over
             else
             {
                 dispatcherTimer.Stop();
@@ -200,14 +228,17 @@ namespace QuizGame
 
         private void btnGreen_Click(object sender, RoutedEventArgs e)
         {
+            //if the colour selected is the same as the colour displayed increment score and reset game
             if ("Green" == colourResult)
             {
+                //increment the score by one if correct
                 txtScore.Text = String.Format("Score: {0}".ToUpper(), ++score);
                 txtState.Text = String.Format("{0}", ++state);
                 dispatcherTimer.Stop();
                 dispatcherTimer = null;
                 StartGame();
             }
+            //Else game over
             else
             {
                 dispatcherTimer.Stop();
@@ -218,14 +249,17 @@ namespace QuizGame
 
         private void btnOrange_Click(object sender, RoutedEventArgs e)
         {
+            //if the colour selected is the same as the colour displayed increment score and reset game
             if ("Orange" == colourResult)
             {
+                //increment the score by one if correct
                 txtScore.Text = String.Format("Score: {0}".ToUpper(), ++score);
                 txtState.Text = String.Format("{0}", ++state);
                 dispatcherTimer.Stop();
                 dispatcherTimer = null;
                 StartGame();
             }
+            //Else game over
             else
             {
                 dispatcherTimer.Stop();

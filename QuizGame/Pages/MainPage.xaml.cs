@@ -34,13 +34,14 @@ namespace QuizGame
             Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested -= MainPage_BackRequested;
         }
 
+        //When the user is navigated to this page it pulls the highest score from the local storage
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested += MainPage_BackRequested;
-
             txtBestScore.Text = "High Score : " + Settings.Settings.loadSettings("highScore").ToString();
         }
 
+        //Checks if the user navigates back a page and saves all settings, then closes the app
         private async void MainPage_BackRequested(object sender, Windows.UI.Core.BackRequestedEventArgs e)
         {
             e.Handled = true;
@@ -58,11 +59,13 @@ namespace QuizGame
             }
         }
 
+        //Play button navigates the user to the play game page
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(PlayGame));
         }
 
+        //Options button navigates the user to the options menu
         private void btnOptions_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Options));

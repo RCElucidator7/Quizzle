@@ -36,10 +36,11 @@
                 <TextBlock x:Name="txtQuest" Text="Blue" FontSize="50" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </Grid>
             <Grid Grid.Row="3" Grid.ColumnSpan="1">
+                <MediaElement x:Name="dingControl" Source="ms-appx:///Assets/ding.mp3" AutoPlay="False" />
                 <Button x:Name="btnBlue" BorderBrush="Blue" BorderThickness="5" Margin="5" Background="Blue" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="75 5" Foreground="White" FontWeight="SemiBold" FontSize="30" Click="btnBlue_Click"/>
             </Grid>
             <Grid Grid.Row="3" Grid.Column="2">
-                    <Button x:Name="btnRed" BorderBrush="Red" Margin="5" Background="Red" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="80 5" Foreground="White" FontWeight="SemiBold" FontSize="30" Click="btnRed_Click"/>
+                <Button x:Name="btnRed" BorderBrush="Red" Margin="5" Background="Red" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="80 5" Foreground="White" FontWeight="SemiBold" FontSize="30" Click="btnRed_Click"/>
             </Grid>
             <Grid Grid.Row="4">
                     <Button x:Name="btnGreen" BorderBrush="Green" BorderThickness="5" Margin="5" Background="Green" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="65 5" Foreground="White" FontWeight="SemiBold" FontSize="30" Click="btnGreen_Click"/>

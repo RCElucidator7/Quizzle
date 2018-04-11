@@ -21,25 +21,26 @@
                 <ColumnDefinition Width="90*"/>
             </Grid.ColumnDefinitions>
             <Grid Grid.Row="0" Margin="8 4 8 4" Grid.ColumnSpan="2">
-                <TextBlock x:ConnectionId='8' x:Name="txtScore" Text="Score: 0" FontSize="30" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Left"/>
-                <TextBlock x:ConnectionId='9' x:Name="txtHighScore" Text="High Score: 0" FontSize="30" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Right"/>
+                <TextBlock x:ConnectionId='9' x:Name="txtScore" Text="Score: 0" FontSize="30" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Left"/>
+                <TextBlock x:ConnectionId='10' x:Name="txtHighScore" Text="High Score: 0" FontSize="30" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Right"/>
             </Grid>
             <Grid Grid.Row="1" Grid.ColumnSpan="2">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <TextBlock x:ConnectionId='6' x:Name="txtState" Text="1" FontSize="45" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <ProgressBar x:ConnectionId='7' x:Name="timeBar" Maximum="100" Minimum="0" Height="10" Grid.Row="1" Margin="8 0 8 0" Value="50" SmallChange="1"/>
+                <TextBlock x:ConnectionId='7' x:Name="txtState" Text="1" FontSize="45" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <ProgressBar x:ConnectionId='8' x:Name="timeBar" Maximum="100" Minimum="0" Height="10" Grid.Row="1" Margin="8 0 8 0" Value="50" SmallChange="1"/>
             </Grid>
             <Grid Grid.Row="2" Grid.ColumnSpan="2">
-                <TextBlock x:ConnectionId='5' x:Name="txtQuest" Text="Blue" FontSize="50" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock x:ConnectionId='6' x:Name="txtQuest" Text="Blue" FontSize="50" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </Grid>
             <Grid Grid.Row="3" Grid.ColumnSpan="1">
-                <Button x:ConnectionId='4' x:Name="btnBlue" BorderBrush="Blue" BorderThickness="5" Margin="5" Background="Blue" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="75 5" Foreground="White" FontWeight="SemiBold" FontSize="30"                      />
+                <MediaElement x:ConnectionId='4' x:Name="dingControl" Source="ms-appx:///Assets/ding.mp3" AutoPlay="False" HorizontalAlignment="Left" Height="103" Margin="98,56,0,0" VerticalAlignment="Top" Width="255" />
+                <Button x:ConnectionId='5' x:Name="btnBlue" BorderBrush="Blue" BorderThickness="5" Margin="5" Background="Blue" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="75 5" Foreground="White" FontWeight="SemiBold" FontSize="30"                      />
             </Grid>
             <Grid Grid.Row="3" Grid.Column="2">
-                    <Button x:ConnectionId='3' x:Name="btnRed" BorderBrush="Red" Margin="5" Background="Red" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="80 5" Foreground="White" FontWeight="SemiBold" FontSize="30"                     />
+                <Button x:ConnectionId='3' x:Name="btnRed" BorderBrush="Red" Margin="5" Background="Red" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="80 5" Foreground="White" FontWeight="SemiBold" FontSize="30"                     />
             </Grid>
             <Grid Grid.Row="4">
                     <Button x:ConnectionId='2' x:Name="btnGreen" BorderBrush="Green" BorderThickness="5" Margin="5" Background="Green" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="65 5" Foreground="White" FontWeight="SemiBold" FontSize="30"                       />

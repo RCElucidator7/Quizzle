@@ -11,11 +11,13 @@ namespace QuizGame.Settings
     {
         public static int highScore, speed;
 
+        //Saves the user settings
         public static void saveSetting(string key, string contents)
         {
             ApplicationData.Current.LocalSettings.Values[key] = contents;
         }
 
+        //Loads the user settings
         public static string loadSettings(string key)
         {
             var setting = ApplicationData.Current.LocalSettings;
