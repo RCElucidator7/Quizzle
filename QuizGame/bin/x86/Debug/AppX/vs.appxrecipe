@@ -8,33 +8,33 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
-    <PackageIdentityName>866fc874-6fd9-4385-96ac-e23f27a3016c</PackageIdentityName>
-    <PackageIdentityPublisher>CN=Ryan Conway</PackageIdentityPublisher>
+    <PackageIdentityName>f6f74697-72d3-4221-8d34-16a55862a078</PackageIdentityName>
+    <PackageIdentityPublisher>CN=F0E0E232-C01C-4B67-B074-D081273A2310</PackageIdentityPublisher>
     <IntermediateOutputPath>D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>82041C627CBA4249C06C0E31275D2A9DEAB85E38433D30E8D7109DF72776C5B4</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>866fc874-6fd9-4385-96ac-e23f27a3016c_1.0.0.0_x86__1b1dnmw3y41wp</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>866fc874-6fd9-4385-96ac-e23f27a3016c_1b1dnmw3y41wp!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>866fc874-6fd9-4385-96ac-e23f27a3016c</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=Ryan Conway</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredManifestChecksum>0963DDA1080138A04E4F5450D76AACE813845F2705EBA785D9FFEE1C87E595CD</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>40917RCElucidator.Quizzle-Colours_1.1.1.0_x86__xkyd4bz42gdge</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>40917RCElucidator.Quizzle-Colours_xkyd4bz42gdge!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>40917RCElucidator.Quizzle-Colours</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=F0E0E232-C01C-4B67-B074-D081273A2310</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.1.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-12T14:21:27.955</Modified>
+      <Modified>2018-04-12T17:32:43.730</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\bin\x86\Debug\QuizGame.exe">
       <PackagePath>entrypoint\QuizGame.exe</PackagePath>
-      <Modified>2018-04-12T13:26:18.002</Modified>
+      <Modified>2018-04-12T17:32:40.564</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ryan Conway\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -504,9 +504,209 @@
       <PackagePath>Assets\gameover.PNG</PackagePath>
       <Modified>2018-04-10T10:11:18.822</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.061</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.071</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.082</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.098</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.128</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <Modified>2018-04-10T10:42:13.721</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:46.889</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\SmallTile.scale-125.png">
+      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:46.900</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\SmallTile.scale-150.png">
+      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:46.912</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:46.924</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:46.939</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.280</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.293</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.307</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.365</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:46.950</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:46.959</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:46.970</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:46.993</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.219</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.263</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.238</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.248</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.136</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.144</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.152</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.169</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.177</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.184</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.211</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.192</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.200</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.373</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.381</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.389</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.409</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.002</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.011</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.020</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-12T15:35:47.050</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -515,32 +715,27 @@
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-12T13:28:46.877</Modified>
+      <Modified>2018-04-12T15:35:47.323</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-12T13:26:08.450</Modified>
+      <Modified>2018-04-12T15:35:46.980</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-12T14:20:28.346</Modified>
+      <Modified>2018-04-12T15:35:47.160</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-12T14:20:45.135</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-12T13:25:08.111</Modified>
+      <Modified>2018-04-12T15:35:47.229</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-12T14:21:16.738</Modified>
+      <Modified>2018-04-12T15:35:47.032</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -557,11 +752,11 @@
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-12T13:21:31.000</Modified>
+      <Modified>2018-04-12T17:32:42.667</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\bin\x86\Debug\Core\QuizGame.exe">
       <PackagePath>QuizGame.exe</PackagePath>
-      <Modified>2018-04-12T14:21:27.952</Modified>
+      <Modified>2018-04-12T17:32:43.709</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

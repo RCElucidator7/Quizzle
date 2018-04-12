@@ -37,6 +37,7 @@ namespace QuizGame.Pages
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            //When user navigates to the game over page, check to see if your score is more then your previous high score and overwrite
             Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested += GameOver_BackRequested;
             highScore = e.Parameter as String;
             localHighScore = Settings.Settings.loadSettings("highScore");
@@ -46,8 +47,10 @@ namespace QuizGame.Pages
                 Settings.Settings.saveSetting("highScore", highScore);
             }
 
+            //Set the score on the page to the high score
             txtUserScore.Text = highScore;
 
+            //Sound file that plays when the user is navigated to the page
             sadTromboControl.Source = new Uri("ms-appx:///Assets/GameOver.mp3");
             sadTromboControl.Play();
         }
@@ -69,11 +72,13 @@ namespace QuizGame.Pages
             }
         }
 
+        //Button to restart the game
         private void btnRetry_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(PlayGame));
         }
 
+        //Button to quit the game
         private void btnQuit_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MainPage));

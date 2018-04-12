@@ -1,0 +1,2 @@
+MainPackage=D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\bin\x86\Release\Upload\QuizGame_1.1.1.0_x86.appx
+SymbolPackage=D:\VisualStudioProjects\Quiz\QuizGame\QuizGame\AppPackages\QuizGame_1.1.1.0\QuizGame_1.1.1.0_x86.appxsym
