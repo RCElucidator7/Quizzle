@@ -180,6 +180,7 @@ namespace QuizGame
             //if the colour selected is the same as the colour displayed increment score and reset game
             if ("Blue" == colourResult)
             {
+                //Set the source of the sound file and play when the answers correct
                 dingControl.Source = new Uri("ms-appx:///Assets/ding.mp3");
                 dingControl.Play();
 
@@ -193,9 +194,7 @@ namespace QuizGame
             //Else game over
             else
             {
-                dingControl.Source = new Uri("ms-appx:///Assets/buzz.mp3");
-                dingControl.Play();
-
+                //Stop the timer and push to the game over page
                 dispatcherTimer.Stop();
                 dispatcherTimer = null;
                 Frame.Navigate(typeof(GameOver), score.ToString());
@@ -207,6 +206,7 @@ namespace QuizGame
             //if the colour selected is the same as the colour displayed increment score and reset game
             if ("Red" == colourResult)
             {
+                //Set the source of the sound file and play when the answers correct
                 dingControl.Source = new Uri("ms-appx:///Assets/ding.mp3");
                 dingControl.Play();
 
@@ -220,6 +220,7 @@ namespace QuizGame
             //Else game over
             else
             {
+                //Stop the timer and push to the game over page
                 dispatcherTimer.Stop();
                 dispatcherTimer = null;
                 Frame.Navigate(typeof(GameOver), score.ToString());
@@ -231,6 +232,7 @@ namespace QuizGame
             //if the colour selected is the same as the colour displayed increment score and reset game
             if ("Green" == colourResult)
             {
+                //Set the source of the sound file and play when the answers correct
                 dingControl.Source = new Uri("ms-appx:///Assets/ding.mp3");
                 dingControl.Play();
 
@@ -244,9 +246,7 @@ namespace QuizGame
             //Else game over
             else
             {
-                dingControl.Source = new Uri("ms-appx:///Assets/buzz.mp3");
-                dingControl.Play();
-
+                //Stop the timer and push to the game over page
                 dispatcherTimer.Stop();
                 dispatcherTimer = null;
                 Frame.Navigate(typeof(GameOver), score.ToString());
@@ -258,6 +258,7 @@ namespace QuizGame
             //if the colour selected is the same as the colour displayed increment score and reset game
             if ("Orange" == colourResult)
             {
+                //Set the source of the sound file and play when the answers correct
                 dingControl.Source = new Uri("ms-appx:///Assets/ding.mp3");
                 dingControl.Play();
 
@@ -271,9 +272,7 @@ namespace QuizGame
             //Else game over
             else
             {
-                dingControl.Source = new Uri("ms-appx:///Assets/buzz.mp3");
-                dingControl.Play();
-
+                //Stop the timer and push to the game over page
                 dispatcherTimer.Stop();
                 dispatcherTimer = null;
                 Frame.Navigate(typeof(GameOver), score.ToString());
