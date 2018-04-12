@@ -11,13 +11,16 @@ We were required to develop a Universal Windows Project (UWP) using C# and xaml.
 
 Requirements
 ------------
-?• Well-designed UI that is fit for purpose and provides a good user experience.
-?• Uses local/roaming storage for storing data and/or settings that are necessary for or 
+• Well-designed UI that is fit for purpose and provides a good user experience.
+
+• Uses local/roaming storage for storing data and/or settings that are necessary for or 
 enhance this user experience.
-?• Demonstrates appropriate use of the sensors/hardware available on UWP capable devices
+
+• Demonstrates appropriate use of the sensors/hardware available on UWP capable devices
 Accelerometer, gyroscope, location services, sound, network service (connect to 
 server for data), camera, multi touch gestures
-?• The app must be more than a simple information app.  It must have interactivity as part of 
+
+• The app must be more than a simple information app.  It must have interactivity as part of 
 the design
 
 Overview:
