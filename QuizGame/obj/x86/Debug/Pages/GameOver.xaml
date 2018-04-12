@@ -16,12 +16,13 @@
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
                 <StackPanel Orientation="Vertical" VerticalAlignment="Center">
-                    <Image x:ConnectionId='6' x:Name="gameoverImg" Margin="30" Height="150" Source="ms-appx:///Assets/gameover.PNG"/>
-                    <TextBlock x:ConnectionId='7' x:Name="Score" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Score" Foreground="White"  FontWeight="SemiBold" TextWrapping="Wrap" FontSize="40" TextAlignment="Center"/>
+                    <Image x:ConnectionId='7' x:Name="gameoverImg" Margin="30" Height="150" Source="ms-appx:///Assets/gameover.PNG"/>
+                    <TextBlock x:ConnectionId='8' x:Name="Score" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Score" Foreground="White"  FontWeight="SemiBold" TextWrapping="Wrap" FontSize="40" TextAlignment="Center"/>
                 </StackPanel>
             </Grid>
             <Grid Grid.Row="1">
-                <TextBlock x:ConnectionId='5' x:Name="txtUserScore" VerticalAlignment="Center" HorizontalAlignment="Center" Text="0" Foreground="White" FontWeight="SemiBold" TextWrapping="Wrap" FontSize="25" TextAlignment="Center"/>
+                <MediaElement x:ConnectionId='5' x:Name="sadTromboControl"/>
+                <TextBlock x:ConnectionId='6' x:Name="txtUserScore" VerticalAlignment="Center" HorizontalAlignment="Center" Text="0" Foreground="White" FontWeight="SemiBold" TextWrapping="Wrap" FontSize="25" TextAlignment="Center"/>
             </Grid>
             <Grid Grid.Row="2">
                 <StackPanel Orientation="Vertical" VerticalAlignment="Center">

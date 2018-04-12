@@ -62,6 +62,7 @@
       <RootProperty Name="FontSize" />
       <RootEvent Name="Click" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.MediaElement" />
     <RootType FullName="QuizGame.Pages.GameOver" />
     <RootType FullName="QuizGame.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Slider">
@@ -73,15 +74,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.MediaElement">
-      <RootProperty Name="Source" />
-      <RootProperty Name="AutoPlay" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
       <RootProperty Name="Maximum" />
       <RootProperty Name="Minimum" />
@@ -89,6 +81,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Value" />
       <RootProperty Name="SmallChange" />
+      <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="QuizGame.PlayGame" />
   </Roots.RootTypes>

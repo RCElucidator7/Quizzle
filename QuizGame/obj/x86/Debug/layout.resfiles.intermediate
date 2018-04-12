@@ -1,4 +1,6 @@
 WinMetadata\Windows.winmd
+Assets\ding.mp3
+Assets\GameOver.mp3
 Assets\gameover.PNG
 Assets\LockScreenLogo.scale-200.png
 Assets\Logo.png
@@ -10,4 +12,3 @@ Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 QuizGame.xr.xml
 Properties\Default.rd.xml
-Settings\ding.mp3

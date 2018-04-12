@@ -30,13 +30,13 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <TextBlock x:Name="txtState" Text="1" FontSize="45" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <ProgressBar x:Name="timeBar" Maximum="100" Minimum="0" Height="10" Grid.Row="1" Margin="8 0 8 0" Value="50" SmallChange="1"/>
+                <ProgressBar x:Name="timeBar" Maximum="100" Minimum="0" Height="15" Grid.Row="1" Margin="8 0 8 0" Value="50" SmallChange="2" Foreground="Maroon"/>
             </Grid>
             <Grid Grid.Row="2" Grid.ColumnSpan="2">
                 <TextBlock x:Name="txtQuest" Text="Blue" FontSize="50" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </Grid>
             <Grid Grid.Row="3" Grid.ColumnSpan="1">
-                <MediaElement x:Name="dingControl" Source="ms-appx:///Assets/ding.mp3" AutoPlay="False" />
+                <MediaElement x:Name="dingControl"/>
                 <Button x:Name="btnBlue" BorderBrush="Blue" BorderThickness="5" Margin="5" Background="Blue" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="75 5" Foreground="White" FontWeight="SemiBold" FontSize="30" Click="btnBlue_Click"/>
             </Grid>
             <Grid Grid.Row="3" Grid.Column="2">

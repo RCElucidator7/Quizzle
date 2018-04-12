@@ -41,7 +41,7 @@ namespace QuizGame
             timeBar.Value = 9999;
             //Timer set up for the timer bar in app
             dispatcherTimer = new DispatcherTimer();
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 0, 1);
             dispatcherTimer.Tick += DispatcherTimer_Tick;
             dispatcherTimer.Start();
 
@@ -180,14 +180,8 @@ namespace QuizGame
             //if the colour selected is the same as the colour displayed increment score and reset game
             if ("Blue" == colourResult)
             {
-                //MediaPlayer ding;
-                //ding = new MediaPlayer();
-
-                //Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Settings");
-                //Windows.Storage.StorageFile file = await folder.GetFileAsync("ding.mp3");
-
-                //ding.AutoPlay = false;
-                //ding.Source = MediaSource.CreateFromStorageFile(file);
+                dingControl.Source = new Uri("ms-appx:///Assets/ding.mp3");
+                dingControl.Play();
 
                 //increment the score by one if correct
                 txtScore.Text = String.Format("Score: {0}".ToUpper(), ++score);
@@ -199,6 +193,9 @@ namespace QuizGame
             //Else game over
             else
             {
+                dingControl.Source = new Uri("ms-appx:///Assets/buzz.mp3");
+                dingControl.Play();
+
                 dispatcherTimer.Stop();
                 dispatcherTimer = null;
                 Frame.Navigate(typeof(GameOver), score.ToString());
@@ -210,6 +207,9 @@ namespace QuizGame
             //if the colour selected is the same as the colour displayed increment score and reset game
             if ("Red" == colourResult)
             {
+                dingControl.Source = new Uri("ms-appx:///Assets/ding.mp3");
+                dingControl.Play();
+
                 //increment the score by one if correct
                 txtScore.Text = String.Format("Score: {0}".ToUpper(), ++score);
                 txtState.Text = String.Format("{0}", ++state);
@@ -231,6 +231,9 @@ namespace QuizGame
             //if the colour selected is the same as the colour displayed increment score and reset game
             if ("Green" == colourResult)
             {
+                dingControl.Source = new Uri("ms-appx:///Assets/ding.mp3");
+                dingControl.Play();
+
                 //increment the score by one if correct
                 txtScore.Text = String.Format("Score: {0}".ToUpper(), ++score);
                 txtState.Text = String.Format("{0}", ++state);
@@ -241,6 +244,9 @@ namespace QuizGame
             //Else game over
             else
             {
+                dingControl.Source = new Uri("ms-appx:///Assets/buzz.mp3");
+                dingControl.Play();
+
                 dispatcherTimer.Stop();
                 dispatcherTimer = null;
                 Frame.Navigate(typeof(GameOver), score.ToString());
@@ -252,6 +258,9 @@ namespace QuizGame
             //if the colour selected is the same as the colour displayed increment score and reset game
             if ("Orange" == colourResult)
             {
+                dingControl.Source = new Uri("ms-appx:///Assets/ding.mp3");
+                dingControl.Play();
+
                 //increment the score by one if correct
                 txtScore.Text = String.Format("Score: {0}".ToUpper(), ++score);
                 txtState.Text = String.Format("{0}", ++state);
@@ -262,6 +271,9 @@ namespace QuizGame
             //Else game over
             else
             {
+                dingControl.Source = new Uri("ms-appx:///Assets/buzz.mp3");
+                dingControl.Play();
+
                 dispatcherTimer.Stop();
                 dispatcherTimer = null;
                 Frame.Navigate(typeof(GameOver), score.ToString());

@@ -47,6 +47,9 @@ namespace QuizGame.Pages
             }
 
             txtUserScore.Text = highScore;
+
+            sadTromboControl.Source = new Uri("ms-appx:///Assets/GameOver.mp3");
+            sadTromboControl.Play();
         }
 
         private async void GameOver_BackRequested(object sender, Windows.UI.Core.BackRequestedEventArgs e)
